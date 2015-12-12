@@ -1,0 +1,29 @@
+{
+  "name": "dci",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "author": "joechrz@gmail.com",
+  "license": "MIT",
+  "homepage": "https://github.com/joechrz/dci",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joechrz/dci.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joechrz/dci/issues"
+  },
+  "iqproj": {
+    "app": false
+  },
+  "scripts": {
+    "test": "bin/iqb test",
+    "start": "bin/iqb start",
+    "preversion": "bin/iqb build",
+    "postpublish": "git push"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chokidar-cli": "~1.0.1",
+    "tape": "~4.2.1"
+  }
+}
