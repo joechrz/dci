@@ -1,4 +1,4 @@
-var roles = require('.');
+var roles = require('.').init();
 var test = require('tape');
 
 test('should define roles', function(t) {

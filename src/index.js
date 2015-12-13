@@ -1,4 +1,4 @@
 module.exports = {
-  context: require('context')
+  context: require('./context')
 };
 

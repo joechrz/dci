@@ -1,9 +1,10 @@
 var executeContext = require('.');
 var test = require('tape');
-var roles = require('../roles');
+var rolesMod = require('../roles');
 
 test('should bind a context executor', function(t) {
   t.plan(1);
+  var roles = rolesMod.init();
   roles.define('moneySource', ['balance'], {
     check: function() {
       return this.balance;

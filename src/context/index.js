@@ -1,8 +1,10 @@
 var roleBind = require('../role-bind');
-var roles = require('../roles');
+var rolesModule = require('../roles');
 var ex = require('../execute-context');
 
 function context(constructor) {
+  var roles = rolesModule.init();
+
   // create an environment that ensures all context properties are bound
   // when execute is called.
   var env = function(roleBindings, executor) {
