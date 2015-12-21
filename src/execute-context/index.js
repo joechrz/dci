@@ -20,7 +20,7 @@ module.exports = {
       });
 
       if (unbound.length > 0) {
-        throw new Error('Cannot execute - unbound properties: ' + JSON.stringify(unbound));
+        throw new Error('Cannot execute context - unbound context properties: ' + JSON.stringify(unbound));
       }
 
       return executor.apply(bound, arguments);
